@@ -1,0 +1,322 @@
+/* General Settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+header,
+button,
+h1,
+p::first-letter {
+    text-transform: uppercase;
+}
+
+header {
+    display: none;
+}
+
+p {
+    display: none;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    margin: 20vh auto 0;
+    display: block;
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 60px;
+    font-weight: 900;
+    color: #303030;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #303030;
+    text-align: center;
+}
+
+#button-main {
+    height: 3em;
+    width: 9em;
+    background: #ADFF00;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 30px;
+    color: #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 2vh auto 0;
+    display: block;
+}
+
+/* Media Queries */
+
+
+/* === Phone === */
+
+@media screen and (min-width:280px) and (orientation:portrait) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+}
+
+
+@media screen and (min-height:280px) and (orientation:landscape) {
+
+    img {
+        width: 30%;
+        margin-top: 7.5vh;
+    }
+
+    h1 {
+        margin-top: 1vh;
+        font-size: 1.5em;
+        line-height: 25px;
+    }
+
+    h2 {
+        font-size: .8em;
+        line-height: 20px;
+    }
+
+    #button-main {
+        font-size: 0.8em;
+    }
+
+}
+
+/* === Tablet ===*/
+
+@media screen and (min-width:500px) and (orientation:portrait) {
+
+    img {
+        margin-top: 15vh;
+    }
+
+    #button-main {
+        font-size: 1.25em;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (min-height:500px) and (orientation:landscape) {
+
+    img {
+        width: 50%;
+        margin-top: 5vh;
+    }
+
+    h1 {
+        margin-top: 2vh;
+        font-size: 3em;
+        line-height: 50px;
+    }
+
+    h2 {
+        margin-top: 1vh;
+        font-size: 1.7em;
+        line-height: 20px;
+    }
+
+    #button-main {
+        font-size: 1.25em;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (min-width:700px) and (orientation:portrait) {
+
+    img {
+        margin-top: 10vh;
+    }
+
+    h1 {
+        margin-top: 2.5vh;
+        font-size: 5.5em;
+        line-height: 60px;
+    }
+
+    h2 {
+        margin-top: 1vh;
+        font-size: 2.7em;
+        line-height: 50px;
+    }
+
+    #button-main {
+        border-radius: 100px;
+        font-size: 1.5em;
+    }
+
+}
+
+
+@media screen and (min-height:700px) and (orientation:landscape) {
+
+    img {
+        width: 45%;
+        margin-top: 5.5vh;
+    }
+
+    h1 {
+        margin-top: 2.5vh;
+        font-size: 5.5em;
+        line-height: 60px;
+    }
+
+    h2 {
+        margin-top: 1vh;
+        font-size: 2.7em;
+        line-height: 50px;
+    }
+
+    #button-main {
+        border-radius: 100px;
+        font-size: 1.5em;
+    }
+
+}
+
+/* (Nest hub be like)*/
+@media screen and (min-height:500px) and (min-width:1000px) and (orientation:landscape) {
+
+    img {
+        width: 40%;
+        margin-top: 5.5vh;
+    }
+}
+
+/* === Desktop ===*/
+
+@media screen and (min-width:1281px) and (orientation:landscape) {
+
+
+    /* Header */
+    header {
+        display: block;
+        margin-top: 4.8vh;
+        margin-left: 5.2vw;
+        margin-bottom: 144px;
+    }
+
+    .link-header {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #989D9C;
+        text-decoration: none;
+        margin-right: 23px;
+        cursor: pointer;
+    }
+
+    .link-header:hover {
+        color: #303030;
+        text-decoration: underline;
+    }
+
+    #button-header {
+        height: 41px;
+        width: 130px;
+        background: #665AE1;
+        border-radius: 20.5px;
+        border: none;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    #button-header:hover {
+        border: 2px solid #665AE1;
+        background: #FFFFFF;
+        color: #665AE1;
+    }
+
+    #button-header:active {
+        background: #665AE1;
+        color: #FFFFFF;
+    }
+
+    /* Main */
+
+    img {
+        max-width: 568px;
+        height: 500px;
+        margin-left: 8.6vw;
+        margin-right: 81px;
+        display: inline-block;
+    }
+
+    div {
+        display: inline-block;
+        position: absolute;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 100px;
+        line-height: 122px;
+        color: #303030;
+        text-align:left;
+    }
+
+
+    h2 {
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 58px;
+        line-height: 71px;
+        color: #303030;
+        text-align:left;
+    }
+
+    p {
+        display: block;
+        width: 515px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #848484;
+        margin-top: 32px;
+        margin-bottom: 65px;
+    }
+
+    #button-main {
+        cursor: pointer;
+        margin: 0;
+    }
+
+    #button-main:hover {
+        background: #85bd0e;
+    }
+    
+    #button-main:active {
+        background: #a3db2b;
+    }
+
+}
